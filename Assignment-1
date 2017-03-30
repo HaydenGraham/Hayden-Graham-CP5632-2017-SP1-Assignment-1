@@ -1,0 +1,39 @@
+def main():
+#    while True:
+    print("Reading list 1.0 - by Hayden Graham \n {} books loaded from {}".format(1, 1))
+    print(
+    "Menu: \n R - List required books \n C - List completed books \n A - Add new book \n M - Mark a book as completed \n Q - Quit")
+    menu_option_selected = raw_input()
+    print(menu_option_selected.upper())
+    if menu_option_selected == 'R':
+        list_required()
+    elif menu_option_selected.upper() == "C":
+        list_completed_books()
+    elif menu_option_selected.upper() == "A":
+        add_new_book()
+    elif menu_option_selected.upper() == "M":
+        print("Marked book as complete")
+    elif menu_option_selected.upper() == "Q":
+#        return False
+        quit()
+    else:
+        print("Get gud")
+
+
+def list_required():
+    print("List Required ran")
+    print("Required books:")
+
+
+
+
+def list_completed_books():
+    print("List completed ran")
+    print("Completed books:")
+
+
+def add_new_book():
+    print("add new book ran")
+
+
+main()
